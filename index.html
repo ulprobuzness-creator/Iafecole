@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPUSIA - Le Numéro 1 de l'Éducation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Menu Hamburger -->
+    <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Menu Latéral -->
+    <nav class="sidebar" id="sidebar">
+        <div class="logo-section">
+            <h1 class="logo">CAMPUSIA</h1>
+            <p class="tagline">N° 1 de l'Éducation</p>
+        </div>
+        <ul class="menu-list">
+            <li><a href="#" onclick="navigateTo('index.html')">Accueil</a></li>
+            <h3 class="menu-category">Secondaire</h3>
+            <li><a href="#" onclick="navigateTo('pages/6eme.html')">6ème</a></li>
+            <li><a href="#" onclick="navigateTo('pages/5eme.html')">5ème</a></li>
+            <li><a href="#" onclick="navigateTo('pages/4eme.html')">4ème</a></li>
+            <li><a href="#" onclick="navigateTo('pages/3eme.html')">3ème</a></li>
+            <li><a href="#" onclick="navigateTo('pages/seconde.html')">2nde (S et L)</a></li>
+            <li><a href="#" onclick="navigateTo('pages/premiere.html')">1ère (S et L)</a></li>
+            <li><a href="#" onclick="navigateTo('pages/terminal.html')">Terminale (D et A4)</a></li>
+            <h3 class="menu-category">Supérieur</h3>
+            <li><a href="#" onclick="navigateTo('pages/l1.html')">1ère Année</a></li>
+            <li><a href="#" onclick="navigateTo('pages/l2.html')">2ème Année</a></li>
+            <li><a href="#" onclick="navigateTo('pages/l3.html')">3ème Année</a></li>
+            <h3 class="menu-category">Plus</h3>
+            <li><a href="#" onclick="navigateTo('pages/tarifs.html')">Tarifs</a></li>
+            <li><a href="#" onclick="navigateTo('pages/apropos.html')">À-Propos</a></li>
+            <li><a href="#" onclick="navigateTo('pages/contact.html')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="search-container">
+                <input type="text" class="search-input" id="searchInput" placeholder="Rechercher des cours, TD, contrôles...">
+                <button class="search-btn" id="searchBtn">🔍</button>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">CAMPUSIA</h1>
+                <p class="hero-subtitle">Le Numéro 1 de l'Éducation en Ligne</p>
+                <p class="hero-description">Téléchargez des cours, TD, contrôles continus et examens pour tous les niveaux</p>
+            </div>
+        </section>
+
+        <!-- Plans Section -->
+        <section class="plans-section">
+            <h2>Nos Plans Gratuits</h2>
+            <div class="plans-container">
+                <div class="plan basic">
+                    <h3>Plan Découverte</h3>
+                    <p class="price">GRATUIT</p>
+                    <ul class="features">
+                        <li>✓ Accès aux ressources de base</li>
+                        <li>��� 5 téléchargements/jour</li>
+                        <li>✓ Prévisualisation des documents</li>
+                        <li>✗ Contenu avancé</li>
+                    </ul>
+                    <button class="plan-btn">Commencer</button>
+                </div>
+
+                <div class="plan standard">
+                    <h3>Plan Étudiant</h3>
+                    <p class="price">GRATUIT</p>
+                    <ul class="features">
+                        <li>✓ Accès complet au contenu</li>
+                        <li>✓ 20 téléchargements/jour</li>
+                        <li>✓ Matières complètes</li>
+                        <li>✗ Exercices corrigés premium</li>
+                    </ul>
+                    <button class="plan-btn">Essayer</button>
+                </div>
+
+                <div class="plan professional">
+                    <h3>Plan Professionnel</h3>
+                    <p class="price">GRATUIT</p>
+                    <ul class="features">
+                        <li>✓ Tous les niveaux disponibles</li>
+                        <li>✓ Téléchargements illimités</li>
+                        <li>✓ Exercices corrigés complets</li>
+                        <li>✓ Suivi des révisions</li>
+                    </ul>
+                    <button class="plan-btn">Accéder</button>
+                </div>
+
+                <div class="plan premium">
+                    <h3>Plan Enseignant</h3>
+                    <p class="price">GRATUIT</p>
+                    <ul class="features">
+                        <li>✓ Ressources pédagogiques complètes</li>
+                        <li>✓ Outils de gestion de classe</li>
+                        <li>✓ Partage de documents</li>
+                        <li>✓ Support prioritaire</li>
+                    </ul>
+                    <button class="plan-btn">Rejoindre</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <h2>Pourquoi choisir CAMPUSIA ?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Ressources Complètes</h3>
+                    <p>Cours, TD, contrôles continus et examens de tous les niveaux</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👁️</div>
+                    <h3>Prévisualisation</h3>
+                    <p>Consultez avant de télécharger pour vérifier le contenu</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Accès Rapide</h3>
+                    <p>Interface simple et intuitive pour trouver ce que vous cherchez</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Protection des Droits</h3>
+                    <p>Les captures d'écran sont désactivées pour protéger nos contenus</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 CAMPUSIA. Tous droits réservés. | Plateforme éducative N° 1</p>
+            <p>Nous protégeons nos contenus : les captures d'écran sont interdites</p>
+            <p>Contact : <a href="mailto:aidecampusia@gmail.com">aidecampusia@gmail.com</a></p>
+        </footer>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
