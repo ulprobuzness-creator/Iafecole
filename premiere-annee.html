@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ressources éducatives complètes pour la 1ère année universitaire - Cours, TD, examens et contrôles gratuits.">
+    <title>Première Année - IAFECOLE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Mobile -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <button class="menu-toggle" id="menuToggle">
+                <span class="hamburger">☰</span>
+            </button>
+            <div class="logo">
+                <span class="logo-icon">📚</span>
+                <span class="logo-text">IAFECOLE</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="premiere-annee.html" class="nav-link active">Première Année</a></li>
+                <li><a href="deuxieme-annee.html" class="nav-link">Deuxième Année</a></li>
+                <li><a href="troisieme-annee.html" class="nav-link">Troisième Année</a></li>
+                <li><a href="apropos.html" class="nav-link">À propos</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Bannière -->
+    <section class="page-banner">
+        <div class="page-banner-content">
+            <h1>Première Année</h1>
+            <p>Ressources complètes pour votre première année universitaire</p>
+        </div>
+    </section>
+
+    <!-- Barre de Recherche -->
+    <section class="search-section">
+        <div class="container">
+            <input type="text" id="searchInput" class="search-input-large" placeholder="Rechercher une matière ou un document...">
+        </div>
+    </section>
+
+    <!-- Matières Première Année -->
+    <section class="subjects-section">
+        <div class="container">
+            <h2 class="section-title">Matières de Première Année</h2>
+            
+            <!-- Mathématiques -->
+            <div class="subject-block">
+                <div class="subject-header">
+                    <h3 class="subject-title">📐 Mathématiques</h3>
+                    <button class="toggle-btn" data-subject="math">▼</button>
+                </div>
+                <div class="subject-content" id="math" style="display: none;">
+                    <div class="documents-grid">
+                        <div class="document-card">
+                            <div class="document-header">
+                                <span class="document-type">Cours</span>
+                            </div>
+                            <h3 class="document-title">Algèbre Linéaire - Complet</h3>
+                            <p class="document-subject">Mathématiques</p>
+                            <div class="document-meta">
+                                <span>📄 42 pages</span>
+                                <span>👥 1.2K vues</span>
+                            </div>
+                            <button class="btn-preview">Prévisualiser</button>
+                            <button class="btn-download">Télécharger</button>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-header">
+                                <span class="document-type">TD</span>
+                            </div>
+                            <h3 class="document-title">Exercices d'Algèbre</h3>
+                            <p class="document-subject">Mathématiques</p>
+                            <div class="document-meta">
+                                <span>📄 18 pages</span>
+                                <span>👥 890 vues</span>
+                            </div>
+                            <button class="btn-preview">Prévisualiser</button>
+                            <button class="btn-download">Télécharger</button>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-header">
+                                <span class="document-type">Examen</span>
+                            </div>
+                            <h3 class="document-title">Examen Mathématiques 2023</h3>
+                            <p class="document-subject">Mathématiques</p>
+                            <div class="document-meta">
+                                <span>📄 8 pages</span>
+                                <span>👥 2.1K vues</span>
+                            </div>
+                            <button class="btn-preview">Prévisualiser</button>
+                            <button class="btn-download">Télécharger</button>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-header">
+                                <span class="document-type">Contrôle</span>
+                            </div>
+                            <h3 class="document-title">Contrôle Continu - Géométrie</h3>
+                            <p class="document-subject">Mathématiques</p>
+                            <div class="document-meta">
+                                <span>📄 6 pages</span>
+                                <span>👥 654 vues</span>
+                            </div>
+                            <button class="btn-preview">Prévisualiser</button>
+                            <button class="btn-download">Télécharger</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Informatique -->
+            <div class="subject-block">
+                <div class="subject-header">
+                    <h3 class="subject-title">💻 Informatique</h3>
+                    <button class="toggle-btn" data-subject="info">▼</button>
+                </div>
+                <div class="subject-content" id="info" style="display: none;">
+                    <div class="documents-grid">
+                        <div class="document-card">
+                            <div class="document-header">
+                                <span class="document-type">Cours</span>
+                            </div>
+                            <h3 class="document-title">Introduction à la Programmation</h3>
+                            <p class="document-subject">Informatique</p>
+                            <div class="document-meta">
+                                <span>📄 56 pages</span>
+                                <span>👥 1.8K vues</span>
+                            </div>
+                            <button class="btn-preview">Prévisualiser</button>
+                            <button class="btn-download">Télécharger</button>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-header">
+                                <span class="document-type">TD</span>
+                            </div>
+                            <h3 class="document-title">Exercices Python</h3>
+                            <p class="document-subject">Informatique</p>
+                            <div class="document-meta">
+                                <span>📄 24 pages</span>
+                                <span>👥 1.5K vues</span>
+                            </div>
+                            <button class="btn-preview">Prévisualiser</button>
+                            <button class="btn-download">Télécharger</button>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-header">
+                                <span class="document-type">Examen</span>
+                            </div>
+                            <h3 class="document-title">Examen Informatique 2024</h3>
+                            <p class="document-subject">Informatique</p>
+                            <div class="document-meta">
+                                <span>📄 10 pages</span>
+                                <span>👥 1.3K vues</span>
+                            </div>
+                            <button class="btn-preview">Prévisualiser</button>
+                            <button class="btn-download">Télécharger</button>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-header">
+                                <span class="document-type">Livre</span>
+                            </div>
+                            <h3 class="document-title">Algorithmes et Structures</h3>
+                            <p class="document-subject">Informatique</p>
+                            <div class="document-meta">
+                                <span>📄 320 pages</span>
+                                <span>👥 2.2K vues</span>
+                            </div>
+                            <button class="btn-preview">Prévisualiser</button>
+                            <button class="btn-download">Télécharger</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Physique -->
+            <div class="subject-block">
+                <div class="subject-header">
+                    <h3 class="subject-title">⚡ Physique</h3>
+                    <button class="toggle-btn" data-subject="physics">▼</button>
+                </div>
+                <div class="subject-content" id="physics" style="display: none;">
+                    <div class="documents-grid">
+                        <div class="document-card">
+                            <div class="document-header">
+                                <span class="document-type">Cours</span>
+                            </div>
+                            <h3 class="document-title">Mécanique Classique</h3>
+                            <p class="document-subject">Physique</p>
+                            <div class="document-meta">
+                                <span>📄 38 pages</span>
+                                <span>👥 945 vues</span>
+                            </div>
+                            <button class="btn-preview">Prévisualiser</button>
+                            <button class="btn-download">Télécharger</button>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-header">
+                                <span class="document-type">TD</span>
+                            </div>
+                            <h3 class="document-title">Problèmes Physique</h3>
+                            <p class="document-subject">Physique</p>
+                            <div class="document-meta">
+                                <span>📄 20 pages</span>
+                                <span>👥 723 vues</span>
+                            </div>
+                            <button class="btn-preview">Prévisualiser</button>
+                            <button class="btn-download">Télécharger</button>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-header">
+                                <span class="document-type">Examen</span>
+                            </div>
+                            <h3 class="document-title">Examen Physique Session 1</h3>
+                            <p class="document-subject">Physique</p>
+                            <div class="document-meta">
+                                <span>📄 7 pages</span>
+                                <span>👥 1.1K vues</span>
+                            </div>
+                            <button class="btn-preview">Prévisualiser</button>
+                            <button class="btn-download">Télécharger</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistiques -->
+            <div class="subject-block">
+                <div class="subject-header">
+                    <h3 class="subject-title">📊 Statistiques</h3>
+                    <button class="toggle-btn" data-subject="stats">▼</button>
+                </div>
+                <div class="subject-content" id="stats" style="display: none;">
+                    <div class="documents-grid">
+                        <div class="document-card">
+                            <div class="document-header">
+                                <span class="document-type">Cours</span>
+                            </div>
+                            <h3 class="document-title">Statistiques Descriptive</h3>
+                            <p class="document-subject">Statistiques</p>
+                            <div class="document-meta">
+                                <span>📄 35 pages</span>
+                                <span>👥 876 vues</span>
+                            </div>
+                            <button class="btn-preview">Prévisualiser</button>
+                            <button class="btn-download">Télécharger</button>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-header">
+                                <span class="document-type">TD</span>
+                            </div>
+                            <h3 class="document-title">Exercices Probabilité</h3>
+                            <p class="document-subject">Statistiques</p>
+                            <div class="document-meta">
+                                <span>📄 19 pages</span>
+                                <span>👥 654 vues</span>
+                            </div>
+                            <button class="btn-preview">Prévisualiser</button>
+                            <button class="btn-download">Télécharger</button>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-header">
+                                <span class="document-type">Examen</span>
+                            </div>
+                            <h3 class="document-title">Examen Statistiques 2024</h3>
+                            <p class="document-subject">Statistiques</p>
+                            <div class="document-meta">
+                                <span>📄 9 pages</span>
+                                <span>👥 789 vues</span>
+                            </div>
+                            <button class="btn-preview">Prévisualiser</button>
+                            <button class="btn-download">Télécharger</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Économie -->
+            <div class="subject-block">
+                <div class="subject-header">
+                    <h3 class="subject-title">💰 Économie</h3>
+                    <button class="toggle-btn" data-subject="econ">▼</button>
+                </div>
+                <div class="subject-content" id="econ" style="display: none;">
+                    <div class="documents-grid">
+                        <div class="document-card">
+                            <div class="document-header">
+                                <span class="document-type">Cours</span>
+                            </div>
+                            <h3 class="document-title">Microéconomie Fondamentale</h3>
+                            <p class="document-subject">Économie</p>
+                            <div class="document-meta">
+                                <span>📄 44 pages</span>
+                                <span>👥 1.1K vues</span>
+                            </div>
+                            <button class="btn-preview">Prévisualiser</button>
+                            <button class="btn-download">Télécharger</button>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-header">
+                                <span class="document-type">TD</span>
+                            </div>
+                            <h3 class="document-title">Cas Pratiques Économie</h3>
+                            <p class="document-subject">Économie</p>
+                            <div class="document-meta">
+                                <span>📄 22 pages</span>
+                                <span>👥 834 vues</span>
+                            </div>
+                            <button class="btn-preview">Prévisualiser</button>
+                            <button class="btn-download">Télécharger</button>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-header">
+                                <span class="document-type">Examen</span>
+                            </div>
+                            <h3 class="document-title">Examen Économie 2023</h3>
+                            <p class="document-subject">Économie</p>
+                            <div class="document-meta">
+                                <span>📄 8 pages</span>
+                                <span>👥 967 vues</span>
+                            </div>
+                            <button class="btn-preview">Prévisualiser</button>
+                            <button class="btn-download">Télécharger</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comptabilité -->
+            <div class="subject-block">
+                <div class="subject-header">
+                    <h3 class="subject-title">📑 Comptabilité</h3>
+                    <button class="toggle-btn" data-subject="compt">▼</button>
+                </div>
+                <div class="subject-content" id="compt" style="display: none;">
+                    <div class="documents-grid">
+                        <div class="document-card">
+                            <div class="document-header">
+                                <span class="document-type">Cours</span>
+                            </div>
+                            <h3 class="document-title">Comptabilité Générale</h3>
+                            <p class="document-subject">Comptabilité</p>
+                            <div class="document-meta">
+                                <span>📄 48 pages</span>
+                                <span>👥 1.3K vues</span>
+                            </div>
+                            <button class="btn-preview">Prévisualiser</button>
+                            <button class="btn-download">Télécharger</button>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-header">
+                                <span class="document-type">TD</span>
+                            </div>
+                            <h3 class="document-title">Exercices Comptabilité</h3>
+                            <p class="document-subject">Comptabilité</p>
+                            <div class="document-meta">
+                                <span>📄 26 pages</span>
+                                <span>👥 945 vues</span>
+                            </div>
+                            <button class="btn-preview">Prévisualiser</button>
+                            <button class="btn-download">Télécharger</button>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-header">
+                                <span class="document-type">Examen</span>
+                            </div>
+                            <h3 class="document-title">Examen Comptabilité 2024</h3>
+                            <p class="document-subject">Comptabilité</p>
+                            <div class="document-meta">
+                                <span>📄 11 pages</span>
+                                <span>👥 1.2K vues</span>
+                            </div>
+                            <button class="btn-preview">Prévisualiser</button>
+                            <button class="btn-download">Télécharger</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Droit -->
+            <div class="subject-block">
+                <div class="subject-header">
+                    <h3 class="subject-title">⚖️ Droit</h3>
+                    <button class="toggle-btn" data-subject="droit">▼</button>
+                </div>
+                <div class="subject-content" id="droit" style="display: none;">
+                    <div class="documents-grid">
+                        <div class="document-card">
+                            <div class="document-header">
+                                <span class="document-type">Cours</span>
+                            </div>
+                            <h3 class="document-title">Droit Civil Fondamental</h3>
+                            <p class="document-subject">Droit</p>
+                            <div class="document-meta">
+                                <span>📄 52 pages</span>
+                                <span>👥 1.0K vues</span>
+                            </div>
+                            <button class="btn-preview">Prévisualiser</button>
+                            <button class="btn-download">Télécharger</button>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-header">
+                                <span class="document-type">TD</span>
+                            </div>
+                            <h3 class="document-title">Cas Pratiques Droit</h3>
+                            <p class="document-subject">Droit</p>
+                            <div class="document-meta">
+                                <span>📄 28 pages</span>
+                                <span>👥 756 vues</span>
+                            </div>
+                            <button class="btn-preview">Prévisualiser</button>
+                            <button class="btn-download">Télécharger</button>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-header">
+                                <span class="document-type">Examen</span>
+                            </div>
+                            <h3 class="document-title">Examen Droit 2023</h3>
+                            <p class="document-subject">Droit</p>
+                            <div class="document-meta">
+                                <span>📄 12 pages</span>
+                                <span>👥 934 vues</span>
+                            </div>
+                            <button class="btn-preview">Prévisualiser</button>
+                            <button class="btn-download">Télécharger</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Anglais -->
+            <div class="subject-block">
+                <div class="subject-header">
+                    <h3 class="subject-title">🌍 Anglais</h3>
+                    <button class="toggle-btn" data-subject="english">▼</button>
+                </div>
+                <div class="subject-content" id="english" style="display: none;">
+                    <div class="documents-grid">
+                        <div class="document-card">
+                            <div class="document-header">
+                                <span class="document-type">Cours</span>
+                            </div>
+                            <h3 class="document-title">Grammaire Anglaise Complète</h3>
+                            <p class="document-subject">Anglais</p>
+                            <div class="document-meta">
+                                <span>📄 40 pages</span>
+                                <span>👥 989 vues</span>
+                            </div>
+                            <button class="btn-preview">Prévisualiser</button>
+                            <button class="btn-download">Télécharger</button>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-header">
+                                <span class="document-type">TD</span>
+                            </div>
+                            <h3 class="document-title">Exercices Anglais</h3>
+                            <p class="document-subject">Anglais</p>
+                            <div class="document-meta">
+                                <span>📄 25 pages</span>
+                                <span>👥 678 vues</span>
+                            </div>
+                            <button class="btn-preview">Prévisualiser</button>
+                            <button class="btn-download">Télécharger</button>
+                        </div>
+
+                        <div class="document-card">
+                            <div class="document-header">
+                                <span class="document-type">Examen</span>
+                            </div>
+                            <h3 class="document-title">Examen Anglais 2024</h3>
+                            <p class="document-subject">Anglais</p>
+                            <div class="document-meta">
+                                <span>📄 9 pages</span>
+                                <span>👥 845 vues</span>
+                            </div>
+                            <button class="btn-preview">Prévisualiser</button>
+                            <button class="btn-download">Télécharger</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>À Propos</h4>
+                <ul>
+                    <li><a href="apropos.html">Qui sommes-nous?</a></li>
+                    <li><a href="apropos.html">Notre Mission</a></li>
+                    <li><a href="apropos.html">Nos Valeurs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Ressources</h4>
+                <ul>
+                    <li><a href="premiere-annee.html">Première Année</a></li>
+                    <li><a href="deuxieme-annee.html">Deuxième Année</a></li>
+                    <li><a href="troisieme-annee.html">Troisième Année</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="contact.html">Formulaire Contact</a></li>
+                    <li><a href="mailto:aidecampusia@gmail.com">Email Support</a></li>
+                    <li><a href="contact.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Légal</h4>
+                <ul>
+                    <li><a href="#politique">Politique de Confidentialité</a></li>
+                    <li><a href="#conditions">Conditions d'Utilisation</a></li>
+                    <li><a href="#droits">Droits d'Auteur</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> IAFECOLE. Tous droits réservés.</p>
+            <p>Créé avec ❤️ pour les étudiants | Plateforme 100% Gratuite</p>
+        </div>
+    </footer>
+
+    <!-- PDF Viewer Modal -->
+    <div class="pdf-modal" id="pdfModal">
+        <div class="pdf-modal-content">
+            <button class="pdf-close" id="pdfClose">✕</button>
+            <div class="pdf-header">
+                <h3 id="pdfTitle">Titre du Document</h3>
+                <button class="back-btn" id="backBtn">← Retour</button>
+            </div>
+            <div class="pdf-viewer">
+                <p>⚠️ Document protégé par filigrane</p>
+                <p style="font-size: 2em; opacity: 0.1; transform: rotate(-45deg); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-45deg);">IAFECOLE - PROTÉGÉ</p>
+                <div class="document-content">
+                    <p>Aperçu du document (prévisualisation limitée)</p>
+                    <p>Les documents complets sont disponibles au téléchargement.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="notification" id="notification"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
