@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez IAFECOLE - Formulaire de contact, email support et FAQ.">
+    <title>Contact - IAFECOLE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Mobile -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <button class="menu-toggle" id="menuToggle">
+                <span class="hamburger">☰</span>
+            </button>
+            <div class="logo">
+                <span class="logo-icon">📚</span>
+                <span class="logo-text">IAFECOLE</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="premiere-annee.html" class="nav-link">Première Année</a></li>
+                <li><a href="deuxieme-annee.html" class="nav-link">Deuxième Année</a></li>
+                <li><a href="troisieme-annee.html" class="nav-link">Troisième Année</a></li>
+                <li><a href="apropos.html" class="nav-link">À propos</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Bannière -->
+    <section class="page-banner">
+        <div class="page-banner-content">
+            <h1>Nous Contacter</h1>
+            <p>Nous sommes là pour répondre à vos questions et suggestions</p>
+        </div>
+    </section>
+
+    <!-- Formulaire de Contact -->
+    <section class="container content-section">
+        <div class="contact-container">
+            <div class="contact-form-section">
+                <h2 class="section-title">📧 Formulaire de Contact</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nom Complet *</label>
+                        <input type="text" id="name" name="name" required placeholder="Votre nom">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Adresse Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+212 XXX XXX XXX">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Sujet *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Sélectionnez un sujet</option>
+                            <option value="general">Demande Générale</option>
+                            <option value="support">Support Technique</option>
+                            <option value="resource">Suggérer une Ressource</option>
+                            <option value="bug">Signaler un Bug</option>
+                            <option value="collaboration">Collaboration</option>
+                            <option value="other">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Votre message..." rows="6"></textarea>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">J'accepte la <a href="#politique">politique de confidentialité</a></label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Envoyer le Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info-section">
+                <h2 class="section-title">📍 Informations de Contact</h2>
+                
+                <div class="info-card">
+                    <h3>📧 Email</h3>
+                    <p><a href="mailto:aidecampusia@gmail.com">aidecampusia@gmail.com</a></p>
+                    <p class="info-description">Réponse en 24-48 heures</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>⏰ Heures d'Ouverture</h3>
+                    <p>Lundi - Vendredi: 08:00 - 18:00</p>
+                    <p>Samedi: 09:00 - 17:00</p>
+                    <p>Dimanche: Fermé</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>🌐 Réseaux Sociaux</h3>
+                    <div class="social-links">
+                        <a href="#facebook" class="social-icon">f</a>
+                        <a href="#twitter" class="social-icon">𝕏</a>
+                        <a href="#instagram" class="social-icon">📷</a>
+                        <a href="#linkedin" class="social-icon">in</a>
+                        <a href="#youtube" class="social-icon">▶</a>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3>💬 Support en Ligne</h3>
+                    <p>Chat disponible 24/7 pour les questions urgentes</p>
+                    <button class="btn btn-secondary" id="chatBtn">Ouvrir le Chat</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="container content-section">
+        <h2 class="section-title">❓ Questions Fréquemment Posées (FAQ)</h2>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3 class="faq-question">
+                    <span>Est-ce que IAFECOLE est vraiment gratuit?</span>
+                    <button class="faq-toggle">+</button>
+                </h3>
+                <div class="faq-answer" style="display: none;">
+                    <p>Oui, IAFECOLE est 100% gratuit. Tous les documents, cours, TD, examens et livres sont accessibles sans frais. Nous croyons que l'éducation doit être accessible à tous.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">
+                    <span>Comment télécharger les documents?</span>
+                    <button class="faq-toggle">+</button>
+                </h3>
+                <div class="faq-answer" style="display: none;">
+                    <p>C'est très simple! Naviguez vers la matière souhaitée, sélectionnez le document, puis cliquez sur le bouton "Télécharger". Le fichier sera téléchargé directement sur votre ordinateur.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">
+                    <span>Puis-je partager les documents avec d'autres?</span>
+                    <button class="faq-toggle">+</button>
+                </h3>
+                <div class="faq-answer" style="display: none;">
+                    <p>Oui, vous pouvez partager les documents avec d'autres étudiants. Nous encourageons le partage de ressources éducatives. Respectez simplement les droits d'auteur.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">
+                    <span>Comment suggérer une nouvelle ressource?</span>
+                    <button class="faq-toggle">+</button>
+                </h3>
+                <div class="faq-answer" style="display: none;">
+                    <p>Vous pouvez utiliser notre formulaire de contact et sélectionner "Suggérer une Ressource". Indiquez-nous la matière, le type de document, et si possible, le lien vers la ressource.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">
+                    <span>Les documents sont-ils à jour?</span>
+                    <button class="faq-toggle">+</button>
+                </h3>
+                <div class="faq-answer" style="display: none;">
+                    <p>Oui, nous mettons à jour régulièrement nos ressources. Les examens des années précédentes et les cours suivent les programmes universitaires actuels.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">
+                    <span>Comment puis-je contribuer à IAFECOLE?</span>
+                    <button class="faq-toggle">+</button>
+                </h3>
+                <div class="faq-answer" style="display: none;">
+                    <p>Nous acceptons les contributions! Si vous avez des documents de qualité à partager, contactez-nous via le formulaire de contact et sélectionnez "Collaboration".</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">
+                    <span>Quels formats de fichiers sont disponibles?</span>
+                    <button class="faq-toggle">+</button>
+                </h3>
+                <div class="faq-answer" style="display: none;">
+                    <p>La majorité de nos documents sont en format PDF pour une meilleure compatibilité. Certains documents sont aussi disponibles en DOC, DOCX, et autres formats.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">
+                    <span>Y a-t-il une limite de téléchargements?</span>
+                    <button class="faq-toggle">+</button>
+                </h3>
+                <div class="faq-answer" style="display: none;">
+                    <p>Non, il n'y a aucune limite. Vous pouvez télécharger autant de documents que vous le souhaitez, autant de fois que nécessaire.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">
+                    <span>Comment signaler un lien de téléchargement cassé?</span>
+                    <button class="faq-toggle">+</button>
+                </h3>
+                <div class="faq-answer" style="display: none;">
+                    <p>Utilisez notre formulaire de contact et sélectionnez "Signaler un Bug". Indiquez-nous le document problématique et nous réparerons le lien dans les plus brefs délais.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">
+                    <span>Avez-vous une application mobile?</span>
+                    <button class="faq-toggle">+</button>
+                </h3>
+                <div class="faq-answer" style="display: none;">
+                    <p>Actuellement, notre site est entièrement responsive et fonctionne parfaitement sur mobile. Nous travaillons sur une application mobile native pour 2024.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>À Propos</h4>
+                <ul>
+                    <li><a href="apropos.html">Qui sommes-nous?</a></li>
+                    <li><a href="apropos.html">Notre Mission</a></li>
+                    <li><a href="apropos.html">Nos Valeurs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Ressources</h4>
+                <ul>
+                    <li><a href="premiere-annee.html">Première Année</a></li>
+                    <li><a href="deuxieme-annee.html">Deuxième Année</a></li>
+                    <li><a href="troisieme-annee.html">Troisième Année</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="contact.html">Formulaire Contact</a></li>
+                    <li><a href="mailto:aidecampusia@gmail.com">Email Support</a></li>
+                    <li><a href="contact.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Légal</h4>
+                <ul>
+                    <li><a href="#politique">Politique de Confidentialité</a></li>
+                    <li><a href="#conditions">Conditions d'Utilisation</a></li>
+                    <li><a href="#droits">Droits d'Auteur</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> IAFECOLE. Tous droits réservés.</p>
+            <p>Créé avec ❤️ pour les étudiants | Plateforme 100% Gratuite</p>
+        </div>
+    </footer>
+
+    <!-- Notification Toast -->
+    <div class="notification" id="notification"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
