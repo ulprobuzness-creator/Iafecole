@@ -1186,4 +1186,95 @@ button {
         box-shadow: none;
         border: 1px solid var(--border-color);
     }
+}/* Première Année */
+
+.subjects-section{
+    padding:40px 20px;
 }
+
+.section-title{
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:30px;
+    color:#0b3d91;
+}
+
+.subject-block{
+    background:#fff;
+    margin-bottom:20px;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+.subject-header{
+    background:#0b3d91;
+    color:white;
+    padding:15px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.subject-title{
+    margin:0;
+    font-size:1.2rem;
+}
+
+.toggle-btn{
+    background:#f4b400;
+    color:#000;
+    border:none;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.subject-content{
+    padding:20px;
+}
+
+.documents-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.document-card{
+    background:#f8f9fa;
+    border-radius:12px;
+    padding:20px;
+    text-align:center;
+    transition:.3s;
+    border:1px solid #ddd;
+}
+
+.document-card:hover{
+    transform:translateY(-5px);
+}
+
+.document-card h3{
+    margin-bottom:15px;
+    color:#0b3d91;
+}
+
+.btn-preview,
+.btn-download{
+    border:none;
+    padding:10px 15px;
+    margin:5px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.btn-preview{
+    background:#0b3d91;
+    color:white;
+}
+
+.btn-download{
+    background:#f4b400;
+    color:black;
+   }
