@@ -539,3 +539,19 @@ window.iafecoleHelp = {
 console.log('%cBienvenue sur IAFECOLE! 🎓', 'color: #d4af37; font-size: 16px; font-weight: bold;');
 console.log('%cPlateforme Éducative Universitaire 100%% Gratuite', 'color: #1a3a52; font-size: 12px;');
 console.log('Pour plus d\'informations, tapez: iafecoleHelp.showHelp()');
+document.querySelectorAll('.toggle-btn').forEach(button => {
+    button.addEventListener('click', function () {
+
+        const subjectId = this.dataset.subject;
+        const content = document.getElementById(subjectId);
+
+        if (content.style.display === 'none' || content.style.display === '') {
+            content.style.display = 'block';
+            this.textContent = '▲';
+        } else {
+            content.style.display = 'none';
+            this.textContent = '▼';
+        }
+
+    });
+});
