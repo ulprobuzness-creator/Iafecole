@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IAFECOLE - La plateforme N°1 gratuite pour les étudiants de Première Année. Cours, TD, Examens et Livres PDF gratuits.">
+    <meta name="theme-color" content="#001f3f">
+    <title>IAFECOLE - Plateforme Éducative N°1 pour la Première Année</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23001f3f' width='100' height='100'/><text x='50' y='60' font-size='60' font-weight='bold' fill='%23FFD700' text-anchor='middle'>I</text></svg>">
+</head>
+<body>
+    <!-- Protection et Sécurité -->
+    <div class="watermark">IAFECOLE - Documents Protégés</div>
 
+    <!-- Barre de Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Menu Hamburger -->
+            <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Logo -->
+            <div class="logo">
+                <span class="logo-icon">📚</span>
+                <span class="logo-text">IAFECOLE</span>
+            </div>
+
+            <!-- Barre de Recherche -->
+            <div class="search-container">
+                <input type="text" class="search-input" id="search-input" placeholder="Rechercher un cours...">
+                <button class="search-btn" id="search-btn">🔍</button>
+            </div>
+
+            <!-- Menu de Navigation -->
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link active">Accueil</a></li>
+                <li><a href="premiere-annee.html" class="nav-link">Première Année</a></li>
+                <li><a href="apropos.html" class="nav-link">À propos</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><button class="close-btn" id="close-menu">✕</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Menu Latéral Coulissant -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <h3>Navigation</h3>
+            <ul class="sidebar-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="premiere-annee.html">Première Année</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <hr>
+            <h3>Ressources</h3>
+            <ul class="sidebar-menu">
+                <li><a href="premiere-annee.html#cours">Cours</a></li>
+                <li><a href="premiere-annee.html#td">TD</a></li>
+                <li><a href="premiere-annee.html#examens">Examens</a></li>
+                <li><a href="premiere-annee.html#livres">Livres</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Bannière Héro -->
+    <section class="hero">
+        <div class="hero-content">
