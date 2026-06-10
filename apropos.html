@@ -1,1 +1,282 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="À propos de IAFECOLE - Mission, Vision et Objectifs de la plateforme éducative.">
+    <meta name="theme-color" content="#001f3f">
+    <title>À Propos - IAFECOLE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23001f3f' width='100' height='100'/><text x='50' y='60' font-size='60' font-weight='bold' fill='%23FFD700' text-anchor='middle'>I</text></svg>">
+</head>
+<body>
+    <!-- Protection et Sécurité -->
+    <div class="watermark">IAFECOLE - Documents Protégés</div>
+
+    <!-- Barre de Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Menu Hamburger -->
+            <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Logo -->
+            <div class="logo">
+                <span class="logo-icon">📚</span>
+                <span class="logo-text">IAFECOLE</span>
+            </div>
+
+            <!-- Barre de Recherche -->
+            <div class="search-container">
+                <input type="text" class="search-input" id="search-input" placeholder="Rechercher un cours...">
+                <button class="search-btn" id="search-btn">🔍</button>
+            </div>
+
+            <!-- Menu de Navigation -->
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="premiere-annee.html" class="nav-link">Première Année</a></li>
+                <li><a href="apropos.html" class="nav-link active">À propos</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><button class="close-btn" id="close-menu">✕</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Menu Latéral Coulissant -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <h3>Navigation</h3>
+            <ul class="sidebar-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="premiere-annee.html">Première Année</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <hr>
+            <h3>Sections</h3>
+            <ul class="sidebar-menu">
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#objectifs">Objectifs</a></li>
+                <li><a href="#valeurs">Valeurs</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toast-notification">
+        <span id="toast-message"></span>
+        <button class="toast-close" id="toast-close">✕</button>
+    </div>
+
+    <!-- En-tête Page -->
+    <section class="page-header">
+        <h1>À Propos de IAFECOLE</h1>
+        <p>Découvrez la plateforme qui réussit avec les étudiants de première année</p>
+        <button class="back-button" id="back-button">← Retour</button>
+    </section>
+
+    <!-- Présentation -->
+    <section class="about-section" id="presentation">
+        <div class="section-content">
+            <h2>📖 Présentation</h2>
+            <div class="about-cards">
+                <div class="about-card">
+                    <div class="about-card-icon">📚</div>
+                    <h3>Une Plateforme Complète</h3>
+                    <p>IAFECOLE est une plateforme éducative en ligne 100% gratuite spécialisée dans l'accompagnement des étudiants de première année universitaire. Depuis sa création, nous mettons à disposition une vaste collection de ressources pédagogiques de qualité.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card-icon">🎓</div>
+                    <h3>Ressources Variées</h3>
+                    <p>Nous proposons des cours détaillés, des travaux dirigés, des contrôles continus, des examens de session, et des livres universitaires. Tous les documents sont soigneusement sélectionnés et organisés par matière et par type.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card-icon">🌟</div>
+                    <h3>Gratuité Totale</h3>
+                    <p>Aucun abonnement, aucun coût caché, aucune limitation. Tous les documents sont accessibles gratuitement sans restriction de téléchargement. C'est notre engagement envers les étudiants.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="about-section" id="mission">
+        <div class="section-content">
+            <h2>🎯 Notre Mission</h2>
+            <div class="mission-content">
+                <p>La mission de IAFECOLE est de <strong>démocratiser l'accès à l'éducation universitaire de qualité</strong> en fournissant gratuitement toutes les ressources nécessaires à la réussite des étudiants de première année.</p>
+                <p>Nous croyons que les ressources éducatives ne doivent pas être un obstacle à la réussite académique. Notre plateforme existe pour :</p>
+                <ul class="mission-list">
+                    <li>✓ Faciliter l'accès à des contenus pédagogiques de qualité</li>
+                    <li>✓ Réduire les inégalités d'accès à l'éducation</li>
+                    <li>✓ Soutenir les étudiants dans leur parcours universitaire</li>
+                    <li>✓ Créer une communauté d'apprentissage solidaire</li>
+                    <li>✓ Encourager la réussite académique pour tous</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision -->
+    <section class="about-section" id="vision">
+        <div class="section-content">
+            <h2>🔮 Notre Vision</h2>
+            <div class="vision-content">
+                <p>IAFECOLE aspire à devenir <strong>la plateforme de référence incontournable pour l'éducation universitaire gratuite</strong> dans le monde francophone et au-delà.</p>
+                <p>À long terme, nous rêvons d'un monde où :</p>
+                <ul class="vision-list">
+                    <li>🌍 Chaque étudiant a accès aux meilleures ressources éducatives</li>
+                    <li>📈 Le coût n'est jamais un obstacle à l'éducation</li>
+                    <li>🤝 Les étudiants collaborent et s'entraident</li>
+                    <li>💡 L'innovation éducative est accessible à tous</li>
+                    <li>🏆 Les étudiants réussissent en fonction de leurs efforts, pas de leurs ressources</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objectifs -->
+    <section class="about-section" id="objectifs">
+        <div class="section-content">
+            <h2>🎪 Nos Objectifs</h2>
+            <div class="objectifs-grid">
+                <div class="objectif-card">
+                    <h3>📚 Couverture Complète</h3>
+                    <p>Couvrir 100% des matières de première année avec des ressources variées et complètes.</p>
+                </div>
+                <div class="objectif-card">
+                    <h3>🚀 Croissance Continue</h3>
+                    <p>Ajouter régulièrement de nouveaux documents et contenus pour rester à jour avec les cursus.</p>
+                </div>
+                <div class="objectif-card">
+                    <h3>🏅 Qualité Premium</h3>
+                    <p>Maintenir un haut niveau de qualité pour tous les documents proposés.</p>
+                </div>
+                <div class="objectif-card">
+                    <h3>👥 Communauté Active</h3>
+                    <p>Construire une communauté active d'étudiants qui s'entraident et partagent.</p>
+                </div>
+                <div class="objectif-card">
+                    <h3>💻 Accessibilité Optimale</h3>
+                    <p>Garantir l'accès facile à tous les appareils et connexions internet.</p>
+                </div>
+                <div class="objectif-card">
+                    <h3>🎯 Impact Social</h3>
+                    <p>Réduire les inégalités éducatives et démocratiser l'accès au savoir.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Valeurs -->
+    <section class="about-section" id="valeurs">
+        <div class="section-content">
+            <h2>💎 Nos Valeurs</h2>
+            <div class="valeurs-list">
+                <div class="valeur-item">
+                    <div class="valeur-icon">🤲</div>
+                    <div class="valeur-content">
+                        <h3>Solidarité</h3>
+                        <p>Nous croyons à l'entraide entre étudiants. Ensemble, nous sommes plus forts et réussissons mieux.</p>
+                    </div>
+                </div>
+                <div class="valeur-item">
+                    <div class="valeur-icon">🔒</div>
+                    <div class="valeur-content">
+                        <h3>Transparence</h3>
+                        <p>Nous sommes transparents sur nos objectifs, nos opérations et notre engagement envers nos utilisateurs.</p>
+                    </div>
+                </div>
+                <div class="valeur-item">
+                    <div class="valeur-icon">🎓</div>
+                    <div class="valeur-content">
+                        <h3>Excellence Éducative</h3>
+                        <p>Nous nous engageons à fournir des ressources de la plus haute qualité pédagogique.</p>
+                    </div>
+                </div>
+                <div class="valeur-item">
+                    <div class="valeur-icon">🔄</div>
+                    <div class="valeur-content">
+                        <h3>Accessibilité</h3>
+                        <p>Chaque étudiant, peu importe sa situation économique, doit avoir accès à une bonne éducation.</p>
+                    </div>
+                </div>
+                <div class="valeur-item">
+                    <div class="valeur-icon">⚡</div>
+                    <div class="valeur-content">
+                        <h3>Innovation</h3>
+                        <p>Nous constamment améliorons notre plateforme pour offrir la meilleure expérience possible.</p>
+                    </div>
+                </div>
+                <div class="valeur-item">
+                    <div class="valeur-icon">🌱</div>
+                    <div class="valeur-content">
+                        <h3>Durabilité</h3>
+                        <p>Nous nous engageons pour une solution à long terme et durable au problème de l'accès éducatif.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appel à l'Action -->
+    <section class="cta-section">
+        <h2>Rejoins des Milliers d'Étudiants</h2>
+        <p>Commence dès maintenant avec IAFECOLE et accède à toutes les ressources gratuites</p>
+        <div class="cta-buttons">
+            <a href="premiere-annee.html" class="btn btn-large">Accéder aux Ressources</a>
+            <a href="contact.html" class="btn btn-secondary">Nous Contacter</a>
+        </div>
+    </section>
+
+    <!-- Pied de Page -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>À propos</h4>
+                <ul>
+                    <li><a href="apropos.html">À propos de IAFECOLE</a></li>
+                    <li><a href="contact.html">Nous Contacter</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Ressources</h4>
+                <ul>
+                    <li><a href="premiere-annee.html">Première Année</a></li>
+                    <li><a href="premiere-annee.html">Tous les Cours</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Assistance</h4>
+                <ul>
+                    <li><a href="contact.html">FAQ</a></li>
+                    <li><a href="contact.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Légal</h4>
+                <ul>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                    <li><a href="#">Politique de Confidentialité</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> IAFECOLE. Tous droits réservés. Plateforme 100% Gratuite pour les Étudiants de Première Année.</p>
+        </div>
+    </footer>
+
+    <!-- Bouton Retour en Haut -->
+    <button class="back-to-top" id="back-to-top" title="Retour en haut">↑</button>
+
+    <script src="script.js"></script>
+</body>
+  </html>
+      
