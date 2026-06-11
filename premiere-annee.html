@@ -1,1 +1,367 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ressources Première Année - Cours, TD, Examens et Livres gratuits pour les étudiants de première année universitaire.">
+    <meta name="theme-color" content="#001f3f">
+    <title>Première Année - IAFECOLE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23001f3f' width='100' height='100'/><text x='50' y='60' font-size='60' font-weight='bold' fill='%23FFD700' text-anchor='middle'>I</text></svg>">
+</head>
+<body>
+    <!-- Protection et Sécurité -->
+    <div class="watermark">IAFECOLE - Documents Protégés</div>
+
+    <!-- Barre de Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Menu Hamburger -->
+            <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Logo -->
+            <div class="logo">
+                <span class="logo-icon">📚</span>
+                <span class="logo-text">IAFECOLE</span>
+            </div>
+
+            <!-- Barre de Recherche -->
+            <div class="search-container">
+                <input type="text" class="search-input" id="search-input" placeholder="Rechercher un cours...">
+                <button class="search-btn" id="search-btn">🔍</button>
+            </div>
+
+            <!-- Menu de Navigation -->
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="premiere-annee.html" class="nav-link active">Première Année</a></li>
+                <li><a href="apropos.html" class="nav-link">À propos</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><button class="close-btn" id="close-menu">✕</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Menu Latéral Coulissant -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <h3>Navigation</h3>
+            <ul class="sidebar-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="premiere-annee.html">Première Année</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <hr>
+            <h3>Sessions</h3>
+            <ul class="sidebar-menu">
+                <li><a href="#session1">Première Session</a></li>
+                <li><a href="#session2">Deuxième Session</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toast-notification">
+        <span id="toast-message"></span>
+        <button class="toast-close" id="toast-close">✕</button>
+    </div>
+
+    <!-- En-tête Page -->
+    <section class="page-header">
+        <h1>Ressources Première Année</h1>
+        <p>Accédez à tous les cours, TD, examens et livres gratuitement</p>
+        <button class="back-button" id="back-button">← Retour</button>
+    </section>
+
+    <!-- Filtre et Options -->
+    <section class="filter-section">
+        <div class="filter-container">
+            <div class="filter-group">
+                <label for="session-filter">Session:</label>
+                <select id="session-filter">
+                    <option value="all">Toutes les Sessions</option>
+                    <option value="session1">Première Session</option>
+                    <option value="session2">Deuxième Session</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="type-filter">Type de Document:</label>
+                <select id="type-filter">
+                    <option value="all">Tous les Types</option>
+                    <option value="cours">Cours</option>
+                    <option value="td">TD</option>
+                    <option value="cc">Contrôles Continus</option>
+                    <option value="examen">Examens</option>
+                    <option value="livre">Livres</option>
+                    <option value="corrige">Corrigés</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="subject-filter">Matière:</label>
+                <select id="subject-filter">
+                    <option value="all">Toutes les Matières</option>
+                    <option value="dessin-technique-1">Dessin Technique 1</option>
+                    <option value="thermodynamique">Thermodynamique</option>
+                    <option value="analyse-1">Analyse 1</option>
+                    <option value="algebre">Algèbre</option>
+                    <option value="mecanique">Mécanique</option>
+                    <option value="electricite">Électricité</option>
+                    <option value="technologie-base">Technologie de Base</option>
+                    <option value="chimie-generale">Chimie Générale</option>
+                    <option value="geologie">Géologie</option>
+                    <option value="technique-expression">Technique d'Expression</option>
+                    <option value="anglais-1">Anglais 1</option>
+                    <option value="informatique-1">Informatique 1</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREMIÈRE SESSION -->
+    <section class="session-section" id="session1">
+        <div class="session-header">
+            <h2>📅 Première Session</h2>
+            <button class="toggle-session" id="toggle-session1">▼</button>
+        </div>
+
+        <!-- Dessin Technique 1 -->
+        <div class="subject-section" id="dessin-technique-1">
+            <h3>📐 Dessin Technique 1</h3>
+            <div class="documents-grid" id="docs-dessin-technique-1">
+                <!-- Documents générés par JavaScript -->
+            </div>
+        </div>
+
+        <!-- Thermodynamique -->
+        <div class="subject-section" id="thermodynamique">
+            <h3>🔥 Thermodynamique</h3>
+            <div class="documents-grid" id="docs-thermodynamique">
+                <!-- Documents générés par JavaScript -->
+            </div>
+        </div>
+
+        <!-- Analyse 1 -->
+        <div class="subject-section" id="analyse-1">
+            <h3>📊 Analyse 1</h3>
+            <div class="documents-grid" id="docs-analyse-1">
+                <!-- Documents générés par JavaScript -->
+            </div>
+        </div>
+
+        <!-- Algèbre -->
+        <div class="subject-section" id="algebre">
+            <h3>✖️ Algèbre</h3>
+            <div class="documents-grid" id="docs-algebre">
+                <!-- Documents générés par JavaScript -->
+            </div>
+        </div>
+
+        <!-- Mécanique -->
+        <div class="subject-section" id="mecanique">
+            <h3>⚙️ Mécanique</h3>
+            <div class="documents-grid" id="docs-mecanique">
+                <!-- Documents générés par JavaScript -->
+            </div>
+        </div>
+
+        <!-- Électricité -->
+        <div class="subject-section" id="electricite">
+            <h3>⚡ Électricité</h3>
+            <div class="documents-grid" id="docs-electricite">
+                <!-- Documents générés par JavaScript -->
+            </div>
+        </div>
+
+        <!-- Technologie de Base -->
+        <div class="subject-section" id="technologie-base">
+            <h3>🔧 Technologie de Base</h3>
+            <div class="documents-grid" id="docs-technologie-base">
+                <!-- Documents générés par JavaScript -->
+            </div>
+        </div>
+
+        <!-- Chimie Générale -->
+        <div class="subject-section" id="chimie-generale">
+            <h3>🧪 Chimie Générale</h3>
+            <div class="documents-grid" id="docs-chimie-generale">
+                <!-- Documents générés par JavaScript -->
+            </div>
+        </div>
+
+        <!-- Géologie -->
+        <div class="subject-section" id="geologie">
+            <h3>🪨 Géologie</h3>
+            <div class="documents-grid" id="docs-geologie">
+                <!-- Documents générés par JavaScript -->
+            </div>
+        </div>
+
+        <!-- Technique d'Expression -->
+        <div class="subject-section" id="technique-expression">
+            <h3>📝 Technique d'Expression</h3>
+            <div class="documents-grid" id="docs-technique-expression">
+                <!-- Documents générés par JavaScript -->
+            </div>
+        </div>
+
+        <!-- Anglais 1 -->
+        <div class="subject-section" id="anglais-1">
+            <h3>🌍 Anglais 1</h3>
+            <div class="documents-grid" id="docs-anglais-1">
+                <!-- Documents générés par JavaScript -->
+            </div>
+        </div>
+
+        <!-- Informatique 1 -->
+        <div class="subject-section" id="informatique-1">
+            <h3>💻 Informatique 1</h3>
+            <div class="documents-grid" id="docs-informatique-1">
+                <!-- Documents générés par JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- DEUXIÈME SESSION -->
+    <section class="session-section" id="session2">
+        <div class="session-header">
+            <h2>📅 Deuxième Session</h2>
+            <button class="toggle-session" id="toggle-session2">▼</button>
+        </div>
+
+        <!-- Mécanique Rationnelle -->
+        <div class="subject-section" id="mecanique-rationnelle">
+            <h3>⚙️ Mécanique Rationnelle</h3>
+            <div class="documents-grid" id="docs-mecanique-rationnelle">
+                <!-- Documents générés par JavaScript -->
+            </div>
+        </div>
+
+        <!-- Mécanique des Fluides -->
+        <div class="subject-section" id="mecanique-fluides">
+            <h3>💧 Mécanique des Fluides</h3>
+            <div class="documents-grid" id="docs-mecanique-fluides">
+                <!-- Documents générés par JavaScript -->
+            </div>
+        </div>
+
+        <!-- Dessin Technique 2 -->
+        <div class="subject-section" id="dessin-technique-2">
+            <h3>📐 Dessin Technique 2</h3>
+            <div class="documents-grid" id="docs-dessin-technique-2">
+                <!-- Documents générés par JavaScript -->
+            </div>
+        </div>
+
+        <!-- Physique Atomique -->
+        <div class="subject-section" id="physique-atomique">
+            <h3>⚛️ Physique Atomique</h3>
+            <div class="documents-grid" id="docs-physique-atomique">
+                <!-- Documents générés par JavaScript -->
+            </div>
+        </div>
+
+        <!-- Anglais 2 -->
+        <div class="subject-section" id="anglais-2">
+            <h3>🌍 Anglais 2</h3>
+            <div class="documents-grid" id="docs-anglais-2">
+                <!-- Documents générés par JavaScript -->
+            </div>
+        </div>
+
+        <!-- Résistance des Matériaux -->
+        <div class="subject-section" id="resistance-materiaux">
+            <h3>💪 Résistance des Matériaux</h3>
+            <div class="documents-grid" id="docs-resistance-materiaux">
+                <!-- Documents générés par JavaScript -->
+            </div>
+        </div>
+
+        <!-- Chimie Organique -->
+        <div class="subject-section" id="chimie-organique">
+            <h3>🧬 Chimie Organique</h3>
+            <div class="documents-grid" id="docs-chimie-organique">
+                <!-- Documents générés par JavaScript -->
+            </div>
+        </div>
+
+        <!-- Optique -->
+        <div class="subject-section" id="optique">
+            <h3>🔬 Optique</h3>
+            <div class="documents-grid" id="docs-optique">
+                <!-- Documents générés par JavaScript -->
+            </div>
+        </div>
+
+        <!-- Informatique 2 -->
+        <div class="subject-section" id="informatique-2">
+            <h3>💻 Informatique 2</h3>
+            <div class="documents-grid" id="docs-informatique-2">
+                <!-- Documents générés par JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Prévisualisation -->
+    <div class="modal" id="preview-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">✕</button>
+            <div class="modal-body">
+                <h2 id="modal-title"></h2>
+                <div class="modal-preview" id="modal-preview">
+                    <!-- Contenu de prévisualisation -->
+                </div>
+                <button class="btn btn-primary" id="modal-download-btn">Télécharger le Document</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pied de Page -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>À propos</h4>
+                <ul>
+                    <li><a href="apropos.html">À propos de IAFECOLE</a></li>
+                    <li><a href="contact.html">Nous Contacter</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Ressources</h4>
+                <ul>
+                    <li><a href="premiere-annee.html">Première Année</a></li>
+                    <li><a href="premiere-annee.html">Tous les Cours</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Assistance</h4>
+                <ul>
+                    <li><a href="contact.html">FAQ</a></li>
+                    <li><a href="contact.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Légal</h4>
+                <ul>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                    <li><a href="#">Politique de Confidentialité</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> IAFECOLE. Tous droits réservés. Plateforme 100% Gratuite pour les Étudiants de Première Année.</p>
+        </div>
+    </footer>
+
+    <!-- Bouton Retour en Haut -->
+    <button class="back-to-top" id="back-to-top" title="Retour en haut">↑</button>
+
+    <script src="script.js"></script>
+</body>
+  </html>
+  
